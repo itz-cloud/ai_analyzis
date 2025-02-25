@@ -1,0 +1,14 @@
+Flask
+flask-cors
+requests
+opencv-python
+librosa
+numpy
+moviepy
+pdfplumber
+python-docx
+soundfile
+scipy
+scikit-image
+Pillow
+piexif
