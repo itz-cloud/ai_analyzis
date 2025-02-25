@@ -81,6 +81,14 @@ ollama run llama3.2:1b-instruct-q4_0
 
 ## Notes
 - Ensure all five backend services and Ollama AI are running properly before testing.
+- Before starting the backend services, manually create two folders inside the project directory:
+
+mkdir uploads
+mkdir reports
+
+Ensure all backend services are running before using the web interface.
+
+The AI model runs locally and does not require an internet connection once installed.
 - If you encounter any issues, check that your virtual environment is activated and all dependencies are installed correctly.
 
 Enjoy using the AI Analysis Tool!
