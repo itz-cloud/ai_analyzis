@@ -1,0 +1,236 @@
+/* General Page Styling */
+body {
+    margin: 0;
+    padding: 0;
+    background: url('s.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Interstellar', sans-serif;
+}
+
+/* Welcome Page Container */
+.welcome-container {
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+/* Main Heading */
+.welcome-container h1 {
+    font-size: 5rem;
+    letter-spacing: 3px;
+}
+
+/* Subheading */
+.welcome-container h2 {
+    font-size: 1.5rem;
+    margin: 10px auto;
+    margin-bottom: 10px;
+}
+
+/* Description Text */
+.welcome-container p {
+    max-width: 1500px;
+    margin: 50px auto;
+    font-size: 3rem;
+    opacity: 0.8;
+}
+
+/* Button Styling */
+.welcome-container button {
+    font-size: 1.5rem;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    text-shadow: 0 0 10px white;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+.welcome-container button:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 15px white;
+}
+/* Login Page */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.login-heading {
+    font-size: 3rem;
+    color: white;
+    font-family: 'Interstellar', sans-serif;
+    margin-bottom: 30px;
+}
+
+input {
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+button {
+    width: 320px;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    background: white;
+    color: black;
+    font-family: 'Interstellar', sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 15px white;
+}
+/* Chat Page Styling */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Welcome Text */
+.chat-welcome {
+    font-size: 3rem;
+    font-family: 'Interstellar', sans-serif;
+    color: white;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Chat Box */
+.chat-box {
+    width: 100%; /* Fixed width relative to parent */
+    max-width: 900px; /* Ensures it never grows beyond 600px */
+    height: 400px; /* Fixed height */
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    font-size: 1.2rem;
+    color: white;
+    overflow-y: auto; /* Enables vertical scrolling instead of expanding */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Ensures messages appear line by line */
+}
+
+
+/* Individual Messages */
+.message {
+    max-width: 100%; /* Keeps text from stretching too far */
+    word-wrap: break-word; /* Breaks long words */ /* Prevents text from forcing a single line */
+    white-space: pre-wrap;
+    font-family: monospace; /* Optional for a cinematic style */
+    margin-bottom: 10px; /* Space between messages */
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Chat Input Container */
+.chat-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 125%;
+    margin-top: 20px;
+}
+
+/* Input Field */
+#chat-input {
+    width: 30%;
+    padding: 12px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#chat-input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Buttons Container */
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+}
+
+/* Send Button */
+#send-btn {
+    padding: 13px 20px;
+    font-size: 1.2rem;
+    background: white;
+    color: black;
+    width: 30%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Interstellar', sans-serif;
+    transition: 0.3s;
+}
+
+#send-btn:hover {
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 15px white;
+}
+
+/* Upload (+) Button */
+.upload-btn {
+    position: fixed;
+    bottom: 40px;
+    right: 5vw; /* Adjust the position relative to screen width */
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.upload-btn:hover {
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 20px white;
+}
